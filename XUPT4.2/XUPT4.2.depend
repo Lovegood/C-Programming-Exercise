@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1489762140 source:e:\xupt c\xupt4.2\main.c
+	<stdio.h>
+	<stdbool.h>
+
