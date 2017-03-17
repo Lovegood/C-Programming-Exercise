@@ -11,11 +11,11 @@ int main()
 
     //判断奇偶
     int remainder=UserInput%2;
-    isEven=(remainder==0)?true:false;
+    isEven=(0==remainder)?true:false;
 
-    if(UserInput==0){
+    if(0==UserInput){
         printf("您输入的数是0，它是偶数。\n");
-    }else if(isEven==true&&UserInput>0){
+    }else if(true==isEven&&UserInput>0){
         printf("您输入的数是正数且是偶数。\n");
     }else if(true==isEven&&UserInput<0){
         printf("您输入的数是负数且是偶数。\n");
