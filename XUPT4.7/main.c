@@ -15,7 +15,7 @@ int main()
             x/=10;
         }
 
-        printf("您输入正整数位数为%d",length);
+        printf("您输入正整数位数为%d，个位为%d",length,ge);
     }
 
     return 0;
