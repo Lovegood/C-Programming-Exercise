@@ -4,14 +4,13 @@
 int main()
 {
     int UserInput;
-    bool isPositiveNum,isEven;
 
     printf("请输入一个整数：");
     scanf("%d",&UserInput);
 
     //判断奇偶
     int remainder=UserInput%2;
-    isEven=(0==remainder)?true:false;
+    bool isEven=(0==remainder)?true:false;
 
     if(0==UserInput){
         printf("您输入的数是0，它是偶数。\n");
