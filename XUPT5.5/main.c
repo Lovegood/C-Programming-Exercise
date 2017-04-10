@@ -40,7 +40,5 @@ int main()
     char HtoD[4];
     itoa(H,HtoD,10);
 
-    printf("z");
-
     return 0;
 }
