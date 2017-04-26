@@ -24,6 +24,7 @@ int main()
             exit(0);
         }
     }
+
     //get input
     for(i=0;i<row;i++){
         for(j=0;j<column;j++){
