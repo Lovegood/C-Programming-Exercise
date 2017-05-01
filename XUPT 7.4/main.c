@@ -8,6 +8,10 @@ int main()
     scanf("%d",&len);
 
     int * a=(int*)malloc(len*sizeof(int));
+    if(a==NULL){
+        printf("内存申请失败。\n");
+        exit(1);
+    }
 
     for(int i=0;i<len;i++){
         printf("请输入第%d个元素",i+1);
