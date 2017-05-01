@@ -21,6 +21,20 @@ int main()
     printf("\n");
 
     //change
+    int t;
+    if(len%2==0){//偶数
+        for(int i=0;i<=len/2;i++){
+            t=a[i];
+            a[i]=a[len-1-i];
+            a[len-1-i]=t;
+        }
+    }else{//奇数
+        for(int i=0;i<(len+1)/2;i++){
+            t=a[i];
+            a[i]=a[len-1-i];
+            a[len-1-i]=t;
+        }
+    }
 
     printf("调换顺序后的数组元素为：\n");
     for(int i=0;i<len;i++){
