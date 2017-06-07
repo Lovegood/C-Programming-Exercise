@@ -47,11 +47,11 @@ int main(){
 			}
 		}
 		if(isExisted==1){
-			printf("°°µãÊÇ%d",max);
+			printf("éç‚¹æ˜¯%d",max);
 		}
 	}
 	if(isExisted==0){
-		printf("°°µã²»´æÔÚ\n");
+		printf("éç‚¹ä¸å­˜åœ¨\n");
 	}
 
 	for(i=0;i<row;i++){

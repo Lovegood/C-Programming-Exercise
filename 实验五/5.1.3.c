@@ -26,7 +26,7 @@ int main()
         }
     }
 
-    printf("´óĞ´×ÖÄ¸Êı%d,Ğ¡Ğ´×ÖÄ¸Êı%d,Êı×ÖÊı%d,¿Õ¸ñÊı%d,ÆäËû×Ö·ûÊı%d¡£\n",upperLetter,lowerLetter,num,space,others);
+    printf("å¤§å†™å­—æ¯æ•°%d,å°å†™å­—æ¯æ•°%d,æ•°å­—æ•°%d,ç©ºæ ¼æ•°%d,å…¶ä»–å­—ç¬¦æ•°%dã€‚\n",upperLetter,lowerLetter,num,space,others);
 
     return 0;
 }
