@@ -4,11 +4,11 @@ int main(){
 	int num[4],temporary;
 
 	for(int i=0;i<4;i++){
-        printf("请输入第%d个整数：",i+1);
+        printf("璇疯緭鍏ョ%d涓暣鏁帮細",i+1);
         scanf("%d",&num[i]);
 	}
 
-	//从小到大
+	//浠庡皬鍒板ぇ
 	for(int outer=0;outer<4;outer++){
         for(int inner=0;inner<4-outer;inner++){
             if(num[inner]>num[inner+1]){
@@ -18,12 +18,12 @@ int main(){
             }
         }
 	}
-	printf("从小到大为：");
+	printf("浠庡皬鍒板ぇ涓猴細");
 	for(int i=0;i<4;i++){
         printf("%d ",num[i]);
 	}
 
-	//从大到小
+	//浠庡ぇ鍒板皬
     for(int outer=0;outer<4;outer++){
         for(int inner=0;inner<4-outer;inner++){
             if(num[inner]<num[inner+1]){
@@ -33,7 +33,7 @@ int main(){
             }
         }
     }
-    printf("从大到小为：");
+    printf("浠庡ぇ鍒板皬涓猴細");
 	for(int i=0;i<4;i++){
         printf("%d ",num[i]);
 	}

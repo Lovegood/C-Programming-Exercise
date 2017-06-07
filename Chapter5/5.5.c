@@ -2,40 +2,40 @@
 #include <stdlib.h>
 
 /*
- * ¶ş½øÖÆBinary
- * °Ë½øÖÆOctal
- * Ê®Áù½øÖÆ Hexadecimal
- * Ê®½øÖÆDecimal
+ * äºŒè¿›åˆ¶Binary
+ * å…«è¿›åˆ¶Octal
+ * åå…­è¿›åˆ¶ Hexadecimal
+ * åè¿›åˆ¶Decimal
  */
 
 int main()
 {
-    //Ê®½øÖÆto¶ş½øÖÆ
+    //åè¿›åˆ¶toäºŒè¿›åˆ¶
     int D=60;
     char DtoB[10];
     itoa(D,DtoB,2);
 
-    //Ê®½øÖÆto°Ë½øÖÆ
+    //åè¿›åˆ¶toå…«è¿›åˆ¶
     char DtoO[4];
     itoa(D,DtoO,8);
 
-    //Ê®½øÖÆtoÊ®Áù½øÖÆ
+    //åè¿›åˆ¶toåå…­è¿›åˆ¶
     char DtoH[4];
     itoa(D,DtoH,16);
 
-    //¶ş½øÖÆtoÊ®½øÖÆ
+    //äºŒè¿›åˆ¶toåè¿›åˆ¶
     int B=111100;
     int BtoD=0;
     for(int i=B%10,count=0;B>0;B/=10,i=B%10,count++){
         BtoD+=pow(2,count)*i;
     }
 
-    //°Ë½øÖÆtoÊ®½øÖÆ
+    //å…«è¿›åˆ¶toåè¿›åˆ¶
     int O=074;
     char OtoD[4];
     itoa(O,OtoD,10);
 
-    //Ê®Áù½øÖÆtoÊ®½øÖÆ
+    //åå…­è¿›åˆ¶toåè¿›åˆ¶
     int H=0x3C;
     char HtoD[4];
     itoa(H,HtoD,10);

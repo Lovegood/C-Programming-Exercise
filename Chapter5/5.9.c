@@ -4,7 +4,7 @@ int main()
 {
     double score,sum=0,count=0;
     while(1){
-        printf("ÇëÊäÈë·ÖÊı£º");
+        printf("è¯·è¾“å…¥åˆ†æ•°ï¼š");
         scanf("%lf",&score);
         if(score<0){
             break;

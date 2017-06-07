@@ -6,11 +6,11 @@ int main(){
 	double sides[len];
 
 	for(int i=0;i<len;i++){
-        printf("ÇëÊäÈëµÚ%d¸ö±ß³¤£º",i+1);
+        printf("è¯·è¾“å…¥ç¬¬%dä¸ªè¾¹é•¿ï¼š",i+1);
         scanf("%lf",&sides[i]);
 	}
 
-	//ÅĞ¶ÏÊÇ·ñÊÇÈı½ÇĞÎ
+	//åˆ¤æ–­æ˜¯å¦æ˜¯ä¸‰è§’å½¢
 	int isTriangle=0;
 	double temporary;
 	for(int outer=0;outer<len;outer++){
@@ -23,7 +23,7 @@ int main(){
         }
 	}
 
-	//debugÏÂÃæÕâ¶Î×¢ÊÍ²»Òª³­¡¾»®ÖØµã¡¿
+	//debugä¸‹é¢è¿™æ®µæ³¨é‡Šä¸è¦æŠ„ã€åˆ’é‡ç‚¹ã€‘
 	//for(int i=0;i<len;i++){
     //    printf("%d ",sides[i]);
 	//}
@@ -32,26 +32,26 @@ int main(){
         isTriangle=1;
 	}
 
-	//Èç¹ûÊÇÈı½ÇĞÎ£¬Ôò:
+	//å¦‚æœæ˜¯ä¸‰è§’å½¢ï¼Œåˆ™:
 	if(isTriangle==1){
-        //Èı½ÇĞÎÃæ»ı¼ÆËã²ÉÓÃ **º£Â×¹«Ê½**
+        //ä¸‰è§’å½¢é¢ç§¯è®¡ç®—é‡‡ç”¨ **æµ·ä¼¦å…¬å¼**
         double area=0,s=0;
         for(int i=0;i<len;i++){
             s+=sides[i];
         }
         s/=2;
         area=sqrt(s*(s-sides[0])*(s-sides[1])*(s-sides[2]));
-        printf("¸ÃÈı½ÇĞÎµÄÃæ»ıÎª%lf£¬ĞÎ×´Îª",area);
-        //ÅĞ¶ÏÈı½ÇĞÎÀàĞÍ
+        printf("è¯¥ä¸‰è§’å½¢çš„é¢ç§¯ä¸º%lfï¼Œå½¢çŠ¶ä¸º",area);
+        //åˆ¤æ–­ä¸‰è§’å½¢ç±»å‹
         if(sides[2]*sides[2]>sides[0]*sides[0]+sides[1]*sides[1]){
-            printf("¶Û½ÇÈı½ÇĞÎ¡£\n");
+            printf("é’è§’ä¸‰è§’å½¢ã€‚\n");
         }else if(sides[2]*sides[2]==sides[0]*sides[0]+sides[1]*sides[1]){
-            printf("Ö±½ÇÈı½ÇĞÎ¡£\n");
+            printf("ç›´è§’ä¸‰è§’å½¢ã€‚\n");
         }else{
-            printf("Èñ½ÇÈı½ÇĞÎ¡£\n");
+            printf("é”è§’ä¸‰è§’å½¢ã€‚\n");
         }
 	}else{
-	    printf("ÕâÈı¸öÊı×Ö²»ÄÜ×é³ÉÈı½ÇĞÎ¡£\n");
+	    printf("è¿™ä¸‰ä¸ªæ•°å­—ä¸èƒ½ç»„æˆä¸‰è§’å½¢ã€‚\n");
 	}
 
 	return 0;
