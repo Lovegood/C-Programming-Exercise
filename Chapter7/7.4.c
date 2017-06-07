@@ -4,21 +4,21 @@
 int main()
 {
     int len;
-    printf("ÇëÊäÈëÊı×éÖĞÔªËØ¸öÊı£º");
+    printf("è¯·è¾“å…¥æ•°ç»„ä¸­å…ƒç´ ä¸ªæ•°ï¼š");
     scanf("%d",&len);
 
     int * a=(int*)malloc(len*sizeof(int));
     if(a==NULL){
-        printf("ÄÚ´æÉêÇëÊ§°Ü¡£\n");
+        printf("å†…å­˜ç”³è¯·å¤±è´¥ã€‚\n");
         exit(1);
     }
 
     for(int i=0;i<len;i++){
-        printf("ÇëÊäÈëµÚ%d¸öÔªËØ",i+1);
+        printf("è¯·è¾“å…¥ç¬¬%dä¸ªå…ƒç´ ",i+1);
         scanf("%d",&a[i]);
     }
 
-    printf("Êı×éÄÚÈ«²¿ÔªËØÎª£º\n");
+    printf("æ•°ç»„å†…å…¨éƒ¨å…ƒç´ ä¸ºï¼š\n");
     for(int i=0;i<len;i++){
         printf("%d\t",a[i]);
     }
@@ -26,13 +26,13 @@ int main()
 
     //change
     int t;
-    if(len%2==0){//Å¼Êı
+    if(len%2==0){//å¶æ•°
         for(int i=0;i<=len/2;i++){
             t=a[i];
             a[i]=a[len-1-i];
             a[len-1-i]=t;
         }
-    }else{//ÆæÊı
+    }else{//å¥‡æ•°
         for(int i=0;i<(len+1)/2;i++){
             t=a[i];
             a[i]=a[len-1-i];
@@ -40,7 +40,7 @@ int main()
         }
     }
 
-    printf("µ÷»»Ë³ĞòºóµÄÊı×éÔªËØÎª£º\n");
+    printf("è°ƒæ¢é¡ºåºåçš„æ•°ç»„å…ƒç´ ä¸ºï¼š\n");
     for(int i=0;i<len;i++){
         printf("%d\t",a[i]);
     }

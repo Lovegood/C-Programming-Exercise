@@ -5,7 +5,7 @@ int main()
 {
     float score[len];
     for(int i=0;i<len;i++){
-        printf("ÇëÊäÈëµÚ%dÃûÑ§ÉúµÄ³É¼¨:",i+1);
+        printf("è¯·è¾“å…¥ç¬¬%dåå­¦ç”Ÿçš„æˆç»©:",i+1);
         scanf("%f",&score[i]);
     }
 
@@ -18,7 +18,7 @@ int main()
         }
     }
 
-    printf("³É¼¨×î¸ßÕâÊÇµÚ%dÃûÍ¬Ñ§£¬ËûµÄ³É¼¨Îª%f",index+1,max);
+    printf("æˆç»©æœ€é«˜è¿™æ˜¯ç¬¬%dååŒå­¦ï¼Œä»–çš„æˆç»©ä¸º%f",index+1,max);
 
     return 0;
 }
