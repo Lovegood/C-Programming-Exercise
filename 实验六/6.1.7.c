@@ -15,6 +15,5 @@ int cntAge(int n,int age){
 	if(n>0){
 		age=cntAge(n-1,age)+2;
 	}
-	return 
-age;
+	return age;
 }
