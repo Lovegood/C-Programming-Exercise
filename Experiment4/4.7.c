@@ -6,13 +6,13 @@ int main()
     for(int day=10;day>0;day--){
         rest=(rest+1)*2;
     }
-    printf("Ô­À´ÓĞ%d¸öÌÒ×Ó¡£\n",rest);
-    //µÚ¶ş²¿·Ö
+    printf("åŸæ¥æœ‰%dä¸ªæ¡ƒå­ã€‚\n",rest);
+    //ç¬¬äºŒéƒ¨åˆ†
     rest=1;
     for(int day=10;day>0;day--){
         rest=(rest+2)*2;
     }
-    printf("Ô­À´ÓĞ%d¸öÌÒ×Ó¡£\n",rest);
+    printf("åŸæ¥æœ‰%dä¸ªæ¡ƒå­ã€‚\n",rest);
 
     return 0;
 }

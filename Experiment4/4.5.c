@@ -3,19 +3,19 @@
 int main()
 {
     int min,max,yu;
-    printf("ÇëÊäÈëÁ½¸öÕýÕûÊý£¬²¢ÒÔ¿Õ¸ñ·Ö¸ôËüÃÇ£º\n");
+    printf("è¯·è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°ï¼Œå¹¶ä»¥ç©ºæ ¼åˆ†éš”å®ƒä»¬ï¼š\n");
     scanf("%d %d",&min,&max);
     if(min>max){
         int t=min;
         min=max;
         max=t;
     }
-    //Õ·×ªÏà³ý·¨
+    //è¾—è½¬ç›¸é™¤æ³•
     while((yu=max%min)!=0){
         max=min;
         min=(yu>min)?min:yu;
     }
-    printf("×î´ó¹«Ô¼ÊýÎª%d",min);
+    printf("æœ€å¤§å…¬çº¦æ•°ä¸º%d",min);
 
     return 0;
 }
