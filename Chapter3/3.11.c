@@ -5,13 +5,13 @@ int main()
 {
     double a,b,c,s,area;
 
-    printf("请输入三角形三边长度并以一个空格分隔：\n");
+    printf("璇疯緭鍏ヤ笁瑙掑舰涓夎竟闀垮害骞朵互涓�涓┖鏍煎垎闅旓細\n");
     scanf("%lf %lf %lf",&a,&b,&c);
 
     s=(a+b+c)/2;
     area=sqrt(s*(s-a)*(s-b)*(s-c));
 
-    printf("三角形面积为%lf",area);
+    printf("涓夎褰㈤潰绉负%lf",area);
 
     return 0;
 }

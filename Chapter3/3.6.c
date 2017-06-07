@@ -4,7 +4,7 @@ int main()
 {
     int UserInput,ge,shi,bai;
 
-    printf("ÇëÊäÈëÒ»¸öÕûÊı:");
+    printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°:");
     scanf("%d",&UserInput);
 
     ge=UserInput%10;
@@ -13,7 +13,7 @@ int main()
     UserInput/=10;
     bai=UserInput%10;
 
-    printf("ÄúÊäÈëµÄÕûÊıµÄ¸öÎ»ÊÇ%d£¬Ê®Î»ÊÇ%d£¬°ÙÎ»ÊÇ%d¡£",ge,shi,bai);
+    printf("æ‚¨è¾“å…¥çš„æ•´æ•°çš„ä¸ªä½æ˜¯%dï¼Œåä½æ˜¯%dï¼Œç™¾ä½æ˜¯%dã€‚",ge,shi,bai);
 
     return 0;
 }
